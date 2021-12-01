@@ -7,27 +7,20 @@ import Projects from './components/Projects'
 import About from './components/About'
 import Articles from './components/Articles'
 import './App.css';
+import NavBar from './components/NavBar';
 
 function App() {
   return (
-    <div className="App">
-      <Router>
+    <Router>
+      <div className="App">
+      <NavBar />
         <Routes>
-        <Route exact path="/" component={Projects} />
-        <Route path="/about" component={About} />
-        <Route path="/articles" component={Articles} />
-          {/* <Route path='/about'>
-            <About />
-          </Route> */}
-          {/* <Route exact path='/'>
-            <Projects />
-          </Route>
-          <Route path='/articles'>
-            <Articles />
-          </Route> */}
+          <Route exact path="/" element={<Projects />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/articles" element={<Articles />} />
         </Routes>
-      </Router>
-    </div>
+      </div>
+    </Router>
   );
 }
 
