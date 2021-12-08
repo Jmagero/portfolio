@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Mailto from 'react-mailto';
+//import Mailto from 'react-mailto';
 
 export default function Contact() {
   const [name, setName] = React.useState("");
