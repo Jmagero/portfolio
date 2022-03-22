@@ -1,23 +1,28 @@
 const projects = [
   {
     title: 'Fresh Pages',
-    subtitle: 'Ruby on Rails',
+    stack1: 'Ruby on Rails',
+    stack2: 'Ruby',
     description:
       'Fresh pages is an entertainment website created using Ruby on Rails, based on the design idea by Nelson Sakwa on Behance',
     image: './railscapstone1.png',
     link: 'https://freshpages.herokuapp.com/',
+    source: 'https://github.com/Jmagero/fresh-pages',
   },
   {
     title: 'Metrics App',
-    subtitle: 'React and Redux',
+    stack1: 'React',
+    stack2: 'Redux',
     description:
       'This is React project that is about building a mobile web application to check a list of metrics (numeric values)',
     image: './metrics-home1.png',
     link: 'https://quirky-leakey-7e7b8e.netlify.app/',
+    source: 'https://github.com/Jmagero/metrics-webapp',
   },
   {
     title: 'To-do-list',
-    subtitle: 'JavaScript, Webpack',
+    stack1: 'JavaScript',
+    stack2: 'Webpack',
     description:
       'This simple To Do list web page is built using webpack and served by a webpack dev server',
     image: './to-do-list.png',
@@ -25,7 +30,8 @@ const projects = [
   },
   {
     title: 'BookStore',
-    subtitle: 'JavaScript',
+    stack1: 'JavaScript',
+    stack2: 'HTML & CSS',
     description:
       'This project is about laying the foundations for Bookstore website',
     image: './bookstore.png',
