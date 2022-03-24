@@ -21,7 +21,7 @@ const NavBar = () => (
         to="/contact"
         className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-green-700 rounded text-base mt-4 md:mt-0 text-white"
       >
-        Hire Me
+        Contact Me
         <ArrowRightIcon className="w-4 h-4 ml-1" />
       </Link>
     </div>

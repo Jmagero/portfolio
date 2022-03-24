@@ -4,13 +4,13 @@ import React from 'react';
 const ContactForm = ({
   onSubmit, handleChange, toSend,
 }) => (
-  <section id="contact" className="bg-gray-900">
+  <section id="contact" className="bg-about">
     <form
       className="w-80 mx-auto py-20"
       onSubmit={onSubmit}
       target="_blank"
     >
-      <div className="mb-3 pt-0">
+      <div className="mb-5 pt-5">
         <input
           type="text"
           name="from_name"
@@ -21,7 +21,7 @@ const ContactForm = ({
           required
         />
       </div>
-      <div className="mb-3 pt-0">
+      <div className="mb-5 pt-5">
         <input
           type="text"
           name="reply_to"
@@ -32,7 +32,7 @@ const ContactForm = ({
           required
         />
       </div>
-      <div className="mb-3 pt-0">
+      <div className="mb-5 pt-5">
         <textarea
           type="textarea"
           name="message"
