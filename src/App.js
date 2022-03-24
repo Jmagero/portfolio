@@ -1,5 +1,4 @@
 import {
-  BrowserRouter as Router,
   Routes,
   Route,
 } from 'react-router-dom';
@@ -50,26 +49,24 @@ function App() {
     );
   }
   return (
-    <Router>
-      <div className="App">
-        <NavBar />
-        <Routes>
-          <Route exact path="/" element={<Projects />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route
-            path="/contact"
-            element={(
-              <ContactForm
-                onSubmit={onSubmit}
-                handleChange={handleChange}
-                toSend={toSend}
-              />
+    <div className="App">
+      <NavBar />
+      <Routes>
+        <Route exact path="/" element={<Projects />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route
+          path="/contact"
+          element={(
+            <ContactForm
+              onSubmit={onSubmit}
+              handleChange={handleChange}
+              toSend={toSend}
+            />
 )}
-          />
-        </Routes>
-      </div>
-    </Router>
+        />
+      </Routes>
+    </div>
   );
 }
 
