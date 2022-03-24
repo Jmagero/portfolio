@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const About = () => (
-  <section id="about">
-    <div className="container mx-auto flex px-10 py-10 md:flex-row flex-col items-center">
-      <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+  <section id="about" className="bg-about">
+    <div className="container mx-auto h-full px-20 py-10 flex justify-between  md:flex-row flex-col items-center">
+      <div className="py-5">
         <h1 className="title-font sm:text-4xl text-3xl mb-4 font-black text-grey">
           Hello, There.
           <br />
@@ -13,35 +13,75 @@ const About = () => (
         <p className="mb-10 leading-relaxed text-justify font-serif">
           <span className="font-bold">I&apos;m a full-stack software developer!</span>
           <br />
-          I can help you build a product ,feature or website
+          I can help you build a product,feature, or website.
           <br />
           Look through some of my work and experience!
           <br />
           If you like what you see and have a project you need coded,
           <br />
-          don&apos;t hestiate to contact me.
+          don&apos;t hesitate to contact me.
         </p>
-        <div className="flex justify-center">
+        <div className="flex flex-col">
           <Link
             to="/contact"
-            className="inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg"
+            className="inline-flex text-indigo-900 bg-blue-500 border-0 py-2 px-6 my-2 focus:outline-none hover:bg-green-600 rounded text-lg"
           >
-            Work With Me
+            WORK WITH ME
           </Link>
           <Link
             to="/"
-            className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg"
+            className="inline-flex text-white bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg"
           >
-            See My Past Work
+            VIEW MY PROJECTS
           </Link>
+          <a
+            className="inline-flex text-indigo-900 bg-blue-500 border-0 py-2 px-6 my-2 focus:outline-none hover:bg-green-600 rounded text-lg"
+            href="./resume.pdf"
+            download
+          >
+            RESUME
+          </a>
         </div>
       </div>
-      <div className="lg:max-w-lg lg:w-80 md:w-1/2 w-5/6 rounded-md border-gray-300">
+      <div className="w-80">
         <img
-          className="object-cover object-center rounded"
+          className="object-contain md:object-scale-down rounded-full"
           alt="hero"
-          src="./myself.jpg"
+          src="./jocyline.png"
         />
+      </div>
+    </div>
+    <div className="flex flex-col items-center">
+      <h1 className="text-indigo-900 font-bold">LET&apos;S CONNECT</h1>
+      <div className="flex justify-center">
+        <a
+          href="https://www.linkedin.com/in/jocyline-magero/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src="./linkedin.png" alt="github" />
+        </a>
+        <a
+          href="https://twitter.com/magero_jocyline"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src="./twitter.png" alt="github" />
+        </a>
+        <a
+          href="https://angel.co/u/jocyline-magero"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src="./angelist.png" alt="github" />
+        </a>
+        <a
+          href="https://github.com/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src="./github.png" alt="github" />
+        </a>
       </div>
     </div>
   </section>

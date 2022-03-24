@@ -15,30 +15,43 @@ const Projects = () => (
           Below you can see some projects I&apos;ve been working on lately.
         </p>
       </div>
-      <div className="flex flex-wrap -m-4">
+      <div className="">
         {projects.map((project) => (
-          <a
-            href={project.link}
-            key={project.image}
-            className="sm:w-1/2 w-100 p-4"
-          >
-            <div className="flex relative">
+          <div className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 bg-white border rounded-lg overflow-hidden m-6 shadow-2xl" key={project.title}>
+            <div className="">
               <img
                 alt="gallery"
-                className="absolute inset-0 w-full h-full object-cover object-center"
+                className="w-full h-48"
                 src={project.image}
               />
-              <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
-                <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
-                  {project.subtitle}
-                </h2>
-                <h1 className="title-font text-lg font-medium text-white mb-3">
-                  {project.title}
-                </h1>
-                <p className="leading-relaxed">{project.description}</p>
-              </div>
             </div>
-          </a>
+            <div className="p-6 border-gray-800 bg-gray-900">
+              <h1 className="title-font text-lg font-medium text-white mb-3">
+                {project.title}
+              </h1>
+              <div className="px-6 pt-4 pb-2">
+                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{project.stack1}</span>
+                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{project.stack2}</span>
+              </div>
+              <p className="leading-relaxed">{project.description}</p>
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noreferrer"
+                className="bg-blue-500 hover:bg-green-700 text-white font-bold py-1 px-2 rounded-full mx-2"
+              >
+                See live
+              </a>
+              <a
+                href={project.source}
+                target="_blank"
+                rel="noreferrer"
+                className="bg-blue-500 hover:bg-green-700 text-white font-bold py-1 px-2 rounded-full"
+              >
+                See Source
+              </a>
+            </div>
+          </div>
         ))}
       </div>
     </div>
