@@ -76,7 +76,7 @@ const About = () => (
           <img src="./angelist.png" alt="github" />
         </a>
         <a
-          href="https://github.com/"
+          href="https://github.com/Jmagero"
           target="_blank"
           rel="noreferrer"
         >
