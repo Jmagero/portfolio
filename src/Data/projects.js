@@ -5,7 +5,7 @@ const projects = [
     stack2: 'Ruby',
     description:
       'Fresh pages is an entertainment website created using Ruby on Rails, based on the design idea by Nelson Sakwa on Behance',
-    image: './railscapstone1.png',
+    image: './freshpages.png',
     link: 'https://freshpages.herokuapp.com/',
     source: 'https://github.com/Jmagero/fresh-pages',
   },
@@ -25,7 +25,7 @@ const projects = [
     stack2: 'Webpack',
     description:
       'This simple To Do list web page is built using webpack and served by a webpack dev server',
-    image: './to-do-list.png',
+    image: './to-do.png',
     link: 'https://musing-hugle-2acbcb.netlify.app/',
     source: 'https://github.com/Jmagero/To-do-list2',
   },
