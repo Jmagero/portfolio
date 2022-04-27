@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const About = () => (
   <section id="about" className="bg-about">
     <div className="container mx-auto h-full px-20 py-10 flex justify-between  md:flex-row flex-col items-center">
-      <div className="py-5">
+      <div className="py-5 px-5 w-100">
         <h1 className="title-font sm:text-4xl text-3xl mb-4 font-black text-grey">
           Hello, There.
           <br />
@@ -13,7 +13,7 @@ const About = () => (
         <p className="mb-10 leading-relaxed text-justify font-serif">
           <span className="font-bold">I&apos;m a full-stack software developer!</span>
           <br />
-          I can help you build a product,feature, or website.
+          I can help you build a product, feature, or website.
           <br />
           Look through some of my work and experience!
           <br />
@@ -43,7 +43,7 @@ const About = () => (
           </a>
         </div>
       </div>
-      <div className="w-80">
+      <div className="w-100">
         <img
           className="object-contain md:object-scale-down rounded-full"
           alt="hero"
