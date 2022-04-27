@@ -17,15 +17,15 @@ const Projects = () => (
       </div>
       <div className="">
         {projects.map((project) => (
-          <div className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 bg-white border rounded-lg overflow-hidden m-6 shadow-2xl" key={project.title}>
-            <div className="">
+          <div className="grid lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 bg-white border rounded-lg overflow-hidden m-6 shadow-2xl" key={project.title}>
+            <div className="col-span-1">
               <img
                 alt="gallery"
-                className="w-full h-48"
+                className="object-fit h-100 w-100"
                 src={project.image}
               />
             </div>
-            <div className="p-6 border-gray-800 bg-gray-900">
+            <div className="col-span-2 p-6 border-gray-800 bg-gray-900">
               <h1 className="title-font text-lg font-medium text-white mb-3">
                 {project.title}
               </h1>
